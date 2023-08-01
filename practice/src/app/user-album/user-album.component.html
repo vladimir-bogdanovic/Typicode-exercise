@@ -1,0 +1,7 @@
+<div>
+  <ul *ngFor="let album of albumTitles">
+    <li (click)="goToAlbumDetails(album.id)">
+      {{ album.title }}
+    </li>
+  </ul>
+</div>

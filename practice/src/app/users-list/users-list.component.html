@@ -1,0 +1,12 @@
+<div>
+  <ul *ngFor="let user of users">
+    <li>
+      <span>
+        {{ user.name }}
+      </span>
+      <a (click)="goToAlbums(user.id)">to Albums </a>
+      <a (click)="goToTodos(user.id)">to Todos </a>
+      <a (click)="goToPosts(user.id)">to Posts </a>
+    </li>
+  </ul>
+</div>
