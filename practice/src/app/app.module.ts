@@ -11,6 +11,7 @@ import { UserPostsComponent } from './user-posts/user-posts.component';
 import { PhotosComponent } from './user-album/photos/photos.component';
 import { UserPostComponent } from './user-posts/user-post/user-post.component';
 import { FormsModule } from '@angular/forms';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { FormsModule } from '@angular/forms';
     UserPostsComponent,
     PhotosComponent,
     UserPostComponent,
+    NotFoundComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],

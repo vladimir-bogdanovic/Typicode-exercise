@@ -6,6 +6,7 @@ import { UserTodosComponent } from './user-todos/user-todos.component';
 import { UserPostsComponent } from './user-posts/user-posts.component';
 import { PhotosComponent } from './user-album/photos/photos.component';
 import { UserPostComponent } from './user-posts/user-post/user-post.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   {
@@ -39,6 +40,18 @@ const routes: Routes = [
   {
     path: 'posts/:postId',
     component: UserPostComponent,
+  },
+  {
+    path: '',
+    component: UsersListComponent,
+  },
+  {
+    path: '*',
+    component: NotFoundComponent,
+  },
+  {
+    path: '**',
+    redirectTo: '*',
   },
 ];
 
